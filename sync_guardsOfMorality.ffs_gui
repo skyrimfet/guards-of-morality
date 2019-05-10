@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FreeFileSync XmlFormat="7" XmlType="GUI">
+    <MainConfig>
+        <Comparison>
+            <Variant>TimeAndSize</Variant>
+            <Symlinks>Exclude</Symlinks>
+            <IgnoreTimeShift/>
+        </Comparison>
+        <SyncConfig>
+            <Variant>TwoWay</Variant>
+            <CustomDirections>
+                <LeftOnly>right</LeftOnly>
+                <RightOnly>left</RightOnly>
+                <LeftNewer>right</LeftNewer>
+                <RightNewer>left</RightNewer>
+                <Different>none</Different>
+                <Conflict>none</Conflict>
+            </CustomDirections>
+            <DetectMovedFiles>false</DetectMovedFiles>
+            <DeletionPolicy>RecycleBin</DeletionPolicy>
+            <VersioningFolder Style="Replace"/>
+        </SyncConfig>
+        <GlobalFilter>
+            <Include>
+                <Item>guardsOfMorality.*</Item>
+                <Item>/scripts/GOM*.pex</Item>
+                <Item>/scripts/source/GOM*.psc</Item>
+                <Item>/scripts/QF_GOM*.pex</Item>
+                <Item>/scripts/source/QF_GOM*.psc</Item>
+            </Include>
+            <Exclude/>
+            <TimeSpan Type="None">0</TimeSpan>
+            <SizeMin Unit="None">0</SizeMin>
+            <SizeMax Unit="None">0</SizeMax>
+        </GlobalFilter>
+        <FolderPairs>
+            <Pair>
+                <Left>C:\Program Files (x86)\Steam\steamapps\common\Skyrim\Data</Left>
+                <Right>C:\Users\Pawel\Desktop\Projekty\Mody\guards-of-morality\data</Right>
+            </Pair>
+        </FolderPairs>
+        <OnCompletion/>
+    </MainConfig>
+    <GuiConfig>
+        <HandleError>Popup</HandleError>
+        <MiddleGridView>Action</MiddleGridView>
+    </GuiConfig>
+</FreeFileSync>
